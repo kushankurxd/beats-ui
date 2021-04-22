@@ -11,14 +11,18 @@
     <link href="./styles/styles.css" rel="stylesheet">
 </head>
 
-<body class="flex flex-row h-screen">
+<body class="flex sm:flex-row flex-col h-screen">
     <!-- Navbar -->
-    <div class="w-screen fixed top-6 mx-auto flex items-center  z-10 justify-evenly">
+    <div class="w-screen fixed top-6 mx-auto flex items-center z-10 justify-evenly">
         <img src="./images/beats.png" alt="" class="w-16 cursor-pointer" onclick="window.location.reload()" />
-        <h4 class="text-md text-white font-medium cursor-pointer hover:underline hover:text-gray-200">HEADPHONES</h4>
-        <h4 class="text-md text-white font-medium cursor-pointer hover:underline hover:text-gray-200">EARPHONES</h4>
-        <h4 class="text-md text-white font-medium cursor-pointer hover:underline hover:text-gray-200">SPEAKERS</h4>
-        <h4 class="text-md text-white font-medium cursor-pointer hover:underline hover:text-gray-200">SUPPORT</h4>
+        <h4 class="text-md text-white font-medium cursor-pointer hover:underline hover:text-gray-200 sm:block hidden">
+            HEADPHONES</h4>
+        <h4 class="text-md text-white font-medium cursor-pointer hover:underline hover:text-gray-200 sm:block hidden">
+            EARPHONES</h4>
+        <h4 class="text-md text-white font-medium cursor-pointer hover:underline hover:text-gray-200 sm:block hidden">
+            SPEAKERS</h4>
+        <h4 class="text-md text-white font-medium cursor-pointer hover:underline hover:text-gray-200 sm:block hidden">
+            SUPPORT</h4>
         <div class="flex items-center">
             <img src="./svgs/menu.svg" alt="" class="w-6 h-6 mr-10 cursor-pointer" />
             <img src="./svgs/search.svg" alt="" class="w-6 h-6 cursor-pointer" />
@@ -26,10 +30,10 @@
     </div>
     <!-- Main -->
     <div class="flex-1 bg-pink-600">
-        <div class="flex flex-col justify-center h-screen ml-40">
+        <div class="flex flex-col justify-center h-screen sm:ml-40 sm:items-start ml-0 items-center">
             <h4 class="text-xl text-white font-medium">Beats Solo<sup>3</sup></h4>
-            <h1 class="text-7xl text-white font-bold mt-10">Designed</h1>
-            <h1 class="text-4xl text-white font-bold mt-4">for sound.</h1>
+            <h1 class="text-5xl sm:text-7xl text-white font-bold mt-10">Designed</h1>
+            <h1 class="text-3xl sm:text-4xl text-white font-bold mt-4">for sound.</h1>
             <h4 class="text-xl text-white font-medium mt-4">Tuned for emotion.</h4>
 
             <h6 class="text-sm font-medium text-white mt-36">Award winning sound</h6>
@@ -37,7 +41,7 @@
             <h6 class="text-sm font-medium text-white mt-1">Fast Fuel technology</h6>
         </div>
     </div>
-    <div class="flex-1 main-right-container">
+    <div class="flex-1 main-right-container sm:block hidden">
         <div class="h-screen w-full flex flex-col justify-end z-50 absolute">
             <div class="flex items-center mb-4 ml-auto mr-40">
                 <img class="bg-white p-3 rounded-full cursor-pointer mr-4 hover:bg-gray-200"
@@ -56,7 +60,7 @@
 
     </div>
     <!-- Headset -->
-    <img src="./images/headset.png" alt="" class="main-headset-image">
+    <img src="./images/headset.png" alt="" class="main-headset-image sm:block hidden">
 </body>
 
 </html>
